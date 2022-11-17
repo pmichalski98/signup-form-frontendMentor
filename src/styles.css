@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Poppins;
+}
+
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --violet: hsl(248, 32%, 49%);
+    --dark: hsl(249, 10%, 26%);
+    --grey: hsl(246, 25%, 77%);
+}
+
+body {
+    background-image: url("/images/bg-intro-desktop.png");
+    background-color: var(--red);
+    background-size: cover;
+}
+
+.container {
+    padding: 5%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.left-side {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-h1 {
+    color: white;
+    font-size: xxx-large;
+    overflow-wrap: break-word;
+    margin: 10% 10% 5%;
+}
+
+.left-text {
+    color: white;
+    margin-right: 5%;
+    margin-left: 10%;
+    overflow-wrap: break-word;
+}
+
+.right-side {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.header-text {
+    background-color: var(--violet);
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+.form {
+    background: white;
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    border-radius: 20px;
+    margin: 12px;
+    padding: 24px 36px 24px 36px;
+    width: 100%;
+    border-style: solid;
+    padding-right: 20px;
+}
+
+button {
+    background-color: var(--green);
+    width: 100%;
+    border-radius: 20px;
+    margin: 12px;
+    padding: 24px 36px 24px 36px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+
+.text {
+    color: var(--grey);
+    font-size: small;
+}
+
+.text strong {
+    color: var(--red);
+
+}
+
+.empty-field {
+    border-color: var(--red);
+    background: url("/images/icon-error.svg") no-repeat right;
+}
+
+.empty-text {
+    color: var(--red);
+    right: 20px;
+    justify-self: right;
+}
+
+
